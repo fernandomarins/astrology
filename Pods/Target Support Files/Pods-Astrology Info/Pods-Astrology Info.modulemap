@@ -1,6 +1,0 @@
-framework module Pods_Astrology_Info {
-  umbrella header "Pods-Astrology Info-umbrella.h"
-
-  export *
-  module * { export * }
-}

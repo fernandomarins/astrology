@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3029DFF446302FA3BD40EB0C /* Pods_Astrologia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01F4C03EE15DC19CB0F20D4 /* Pods_Astrologia.framework */; };
 		551B36212790AD770011E5CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551B36202790AD770011E5CD /* AppDelegate.swift */; };
 		551B36232790AD770011E5CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551B36222790AD770011E5CD /* SceneDelegate.swift */; };
 		551B36252790AD770011E5CD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551B36242790AD770011E5CD /* MainViewController.swift */; };
@@ -15,10 +16,11 @@
 		551B362D2790AD780011E5CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551B362B2790AD780011E5CD /* LaunchScreen.storyboard */; };
 		55428E5C2790BECC006E821D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55428E5B2790BECB006E821D /* InfoViewController.swift */; };
 		55428E5E2790D7CC006E821D /* AstroDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55428E5D2790D7CC006E821D /* AstroDatabase.swift */; };
-		8256124F2E67DC597E3838F9 /* Pods_Astrology_Info.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD0B9E2A9BDDFE2FCB0B2A5 /* Pods_Astrology_Info.framework */; };
+		557AC13E27921CC600291F9B /* EnterInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557AC13D27921CC600291F9B /* EnterInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B69A433C0549756684EB80E /* Pods-Astrologia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Astrologia.debug.xcconfig"; path = "Target Support Files/Pods-Astrologia/Pods-Astrologia.debug.xcconfig"; sourceTree = "<group>"; };
 		3C79483A02A4EFDC4BB3EB44 /* Pods-Astrology Info.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Astrology Info.debug.xcconfig"; path = "Target Support Files/Pods-Astrology Info/Pods-Astrology Info.debug.xcconfig"; sourceTree = "<group>"; };
 		551B361D2790AD770011E5CD /* Astrologia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Astrologia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		551B36202790AD770011E5CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +32,9 @@
 		551B362E2790AD780011E5CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55428E5B2790BECB006E821D /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		55428E5D2790D7CC006E821D /* AstroDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroDatabase.swift; sourceTree = "<group>"; };
-		BCD0B9E2A9BDDFE2FCB0B2A5 /* Pods_Astrology_Info.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Astrology_Info.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		557AC13D27921CC600291F9B /* EnterInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterInfoViewController.swift; sourceTree = "<group>"; };
+		5C6B46C11FD3A7C9DA8D3C2E /* Pods-Astrologia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Astrologia.release.xcconfig"; path = "Target Support Files/Pods-Astrologia/Pods-Astrologia.release.xcconfig"; sourceTree = "<group>"; };
+		C01F4C03EE15DC19CB0F20D4 /* Pods_Astrologia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Astrologia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB4363CF09E868F0697DBE0 /* Pods-Astrology Info.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Astrology Info.release.xcconfig"; path = "Target Support Files/Pods-Astrology Info/Pods-Astrology Info.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8256124F2E67DC597E3838F9 /* Pods_Astrology_Info.framework in Frameworks */,
+				3029DFF446302FA3BD40EB0C /* Pods_Astrologia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,9 +73,8 @@
 			children = (
 				551B36202790AD770011E5CD /* AppDelegate.swift */,
 				551B36222790AD770011E5CD /* SceneDelegate.swift */,
-				551B36242790AD770011E5CD /* MainViewController.swift */,
+				557AC13C27921CA900291F9B /* Controllers */,
 				551B36262790AD770011E5CD /* Main.storyboard */,
-				55428E5B2790BECB006E821D /* InfoViewController.swift */,
 				55428E5D2790D7CC006E821D /* AstroDatabase.swift */,
 				551B36292790AD780011E5CD /* Assets.xcassets */,
 				551B362B2790AD780011E5CD /* LaunchScreen.storyboard */,
@@ -80,10 +83,20 @@
 			path = "Astrology Info";
 			sourceTree = "<group>";
 		};
+		557AC13C27921CA900291F9B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				551B36242790AD770011E5CD /* MainViewController.swift */,
+				55428E5B2790BECB006E821D /* InfoViewController.swift */,
+				557AC13D27921CC600291F9B /* EnterInfoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		96C0FB25AC83D51186D746AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BCD0B9E2A9BDDFE2FCB0B2A5 /* Pods_Astrology_Info.framework */,
+				C01F4C03EE15DC19CB0F20D4 /* Pods_Astrologia.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,6 +106,8 @@
 			children = (
 				3C79483A02A4EFDC4BB3EB44 /* Pods-Astrology Info.debug.xcconfig */,
 				DFB4363CF09E868F0697DBE0 /* Pods-Astrology Info.release.xcconfig */,
+				1B69A433C0549756684EB80E /* Pods-Astrologia.debug.xcconfig */,
+				5C6B46C11FD3A7C9DA8D3C2E /* Pods-Astrologia.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -181,7 +196,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Astrology Info-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Astrologia-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -194,15 +209,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Astrology Info/Pods-Astrology Info-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Astrologia/Pods-Astrologia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Astrology Info/Pods-Astrology Info-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Astrologia/Pods-Astrologia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Astrology Info/Pods-Astrology Info-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Astrologia/Pods-Astrologia-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -215,6 +230,7 @@
 				551B36252790AD770011E5CD /* MainViewController.swift in Sources */,
 				551B36212790AD770011E5CD /* AppDelegate.swift in Sources */,
 				55428E5E2790D7CC006E821D /* AstroDatabase.swift in Sources */,
+				557AC13E27921CC600291F9B /* EnterInfoViewController.swift in Sources */,
 				55428E5C2790BECC006E821D /* InfoViewController.swift in Sources */,
 				551B36232790AD770011E5CD /* SceneDelegate.swift in Sources */,
 			);
@@ -360,7 +376,7 @@
 		};
 		551B36322790AD780011E5CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C79483A02A4EFDC4BB3EB44 /* Pods-Astrology Info.debug.xcconfig */;
+			baseConfigurationReference = 1B69A433C0549756684EB80E /* Pods-Astrologia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -390,7 +406,7 @@
 		};
 		551B36332790AD780011E5CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFB4363CF09E868F0697DBE0 /* Pods-Astrology Info.release.xcconfig */;
+			baseConfigurationReference = 5C6B46C11FD3A7C9DA8D3C2E /* Pods-Astrologia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

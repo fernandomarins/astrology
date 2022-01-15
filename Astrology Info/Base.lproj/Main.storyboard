@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Eb-n0-nf1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -7,17 +8,41 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Infos-->
+        <scene sceneID="2eB-LC-SOT">
+            <objects>
+                <viewController id="OMY-YO-SF6" customClass="EnterInfoViewController" customModule="Astrologia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LUD-YS-DVG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="prk-d2-ZOp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Infos" id="Wuu-DY-c58">
+                        <barButtonItem key="backBarButtonItem" title="Astrologia ✨" id="roF-e8-d22"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2v8-SY-2Ya" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966" y="-579"/>
+        </scene>
         <!--Astrologia ✨-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Astrology_Info" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Astrologia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Astrologia ✨" id="ZWW-B6-4Ep"/>
+                    <navigationItem key="navigationItem" title="Astrologia ✨" id="ZWW-B6-4Ep">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bgh-GP-Uck">
+                            <connections>
+                                <segue destination="OMY-YO-SF6" kind="show" id="tAb-ve-5ql"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="7Lx-mM-UAZ" kind="show" identifier="showInfo" id="GPQ-Fx-seu"/>
                     </connections>
@@ -29,9 +54,9 @@
         <!--Info View Controller-->
         <scene sceneID="BM4-sU-fM3">
             <objects>
-                <viewController id="7Lx-mM-UAZ" customClass="InfoViewController" customModule="Astrology_Info" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7Lx-mM-UAZ" customClass="InfoViewController" customModule="Astrologia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uxw-g3-Euc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="8Qq-dz-187"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
