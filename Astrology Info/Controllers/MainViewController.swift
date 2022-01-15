@@ -10,9 +10,7 @@ import SnapKit
 
 class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-//    @IBOutlet weak var planetPicker: UIPickerView!
-//    @IBOutlet weak var signPicker: UIPickerView!
-//    @IBOutlet weak var housePicker: UIPickerView!
+    private let astroDB = AstroDatabase.shared
     
     private let mainScrollView = UIScrollView()
     private let mainContainer = UIView()
@@ -25,21 +23,10 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     private let housePicker = UIPickerView()
     private let showButton = UIButton()
     
-    var planets = [String]()
-    var signs = [String]()
-    var houses = [String]()
-    
-    var selectedPlanet = ""
-    var selectedSign = ""
-    var selectedHouse = ""
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        planets = ["Sol", "Lua", "Mercúrio", "Vênus", "Marte", "Júpiter", "Saturno"]
-        signs = ["Áries", "Touro", "Gêmeos", "Câncer", "Leão", "Virgem", "Libra", "Escorpião",
-        "Sagitário", "Capricórnio", "Aquário", "Peixes"]
-        houses = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
         setLayout()
     }
     
@@ -156,9 +143,9 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showInfo" {
             if let destination = segue.destination as? InfoViewController {
-                destination.sign = signs[signPicker.selectedRow(inComponent: 0)]
-                destination.house = houses[housePicker.selectedRow(inComponent: 0)]
-                destination.planet = planets[planetPicker.selectedRow(inComponent: 0)]
+                destination.sign = astroDB.signs[signPicker.selectedRow(inComponent: 0)]
+                destination.house = astroDB.houses[housePicker.selectedRow(inComponent: 0)]
+                destination.planet = astroDB.planets[planetPicker.selectedRow(inComponent: 0)]
             }
         }
     }
@@ -170,11 +157,11 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch pickerView.tag {
         case 0:
-            return planets.count
+            return astroDB.planets.count
         case 1:
-            return signs.count
+            return astroDB.signs.count
         case 2:
-            return houses.count
+            return astroDB.houses.count
         default:
             return 0
         }
@@ -183,11 +170,11 @@ class MainViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch pickerView.tag {
         case 0:
-            return planets[row]
+            return astroDB.planets[row]
         case 1:
-            return signs[row]
+            return astroDB.signs[row]
         case 2:
-            return houses[row]
+            return astroDB.houses[row]
         default:
             return nil
         }

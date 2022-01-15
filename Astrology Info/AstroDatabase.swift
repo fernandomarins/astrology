@@ -11,6 +11,11 @@ struct AstroDatabase {
     
     static let shared = AstroDatabase()
     
+    let planets = ["Sol", "Lua", "Mercúrio", "Vênus", "Marte", "Júpiter", "Saturno"]
+    let signs = ["Áries", "Touro", "Gêmeos", "Câncer", "Leão", "Virgem", "Libra", "Escorpião",
+                 "Sagitário", "Capricórnio", "Aquário", "Peixes"]
+    let houses = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"]
+    
     let dictionarySigns = [
         "Sol": [
             "Áries": "Você tem tudo para brilhar ao ser corajoso, assertivo e dinâmico. Você se sente vitalizado quando alcança cada dia mais independência. Tem também a capacidade de liderar de forma criativa e inspirada. É uma pessoa que se destaca ao motivar e entusiasmar as pessoas.Assuma seu poder autoafirmativo, seu dinamismo e sua disposição em desbravar o novo. Ao se arriscar, seguindo sua intuição e seu impulso assertivo, você obterá o merecido reconhecimento de ser alguém único, especial e repleto de vida.",
